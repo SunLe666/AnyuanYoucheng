@@ -1,0 +1,14 @@
+<view>
+  <view class='My-Main'>
+      <open-data type="userAvatarUrl" class="UserImage"></open-data>
+      <open-data type="userNickName" class="Username"></open-data>
+  </view>
+
+  <view class='My-MainTwo'>
+  </view>
+  
+  <view class='My-MainThree' bindtap='about'>
+      <text>关于作者</text>
+      <image src='/image/right.png'></image>
+  </view>
+</view> 

@@ -1,0 +1,36 @@
+<swiper indicator-active-color='#fff' autoplay='true' indicator-dots="true"  circular = "true">
+        <block wx:for="{{imgs}}" wx:key="{{index}}" wx:for-item="item">
+          <swiper-item class="swiper-items"  >
+            <image class="swiper-image img_width_swiper" src="{{item}}"></image>
+          </swiper-item>
+        </block>
+</swiper>
+
+<view class='newsp-box'>
+    <view class="text" >
+      精选脐橙
+    </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+      <block wx:for-items="{{navs1}}" wx:key="navs">
+          <view class="flex-item  bc_green ">
+            <view class="swiper-image" catchtap="goDetail" data-type="{{item.text}},{{item.price}},{{item.image}}">
+                <image src="{{item.image}}" class="swiper-image img_width"/>
+                <text>{{item.text}}</text>
+                <view class='text_money text_hanggao'>￥{{item.price}}</view>
+            </view>
+          </view>
+      </block>
+    </view>
+
+  <view class="flex-wrp" style="flex-direction:row;">
+      <block wx:for-items="{{navs2}}" wx:key="navs">
+          <view class="flex-item  bc_green ">
+            <view class="swiper-image" catchtap="goDetail" data-type="{{item.text}},{{item.price}},{{item.image}}">
+                <image src="{{item.image}}" class="swiper-image img_width"/>
+                <text>{{item.text}}</text>
+                <view class='text_money text_hanggao'>￥{{item.price}}</view>
+            </view>
+          </view>
+      </block>
+    </view>
+</view>
